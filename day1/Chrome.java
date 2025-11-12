@@ -13,6 +13,7 @@ public class Chrome {
  System.out.println("Printing Boolean: "+Beta);
  System.out.println("Printing int: "+releaseYear);
  System.out.println("Printing char: "+c);
+
 	}
 
 }
