@@ -7,19 +7,19 @@ public class Palindrome {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		int first = num;
-		int second = 0;
+		int input = sc.nextInt();
+		int first = input;
+		int rem = 0;
 
-		while (num != 0) {
-			int d = num % 10;
-			second = second * 10 + d;
-			num = num / 10;
+		while (input != 0) {
+			int d = input % 10;
+			rem = rem * 10 + d;
+			input = input / 10;
 		}
-		if (first == second) {
+		if (first == rem) {
 			System.out.println(first + " is a palindrome number.");
 		} else {
-			System.out.println(second + " is a not palindrome number.");
+			System.out.println(rem + " is a not palindrome number.");
 		}
 
 	}
